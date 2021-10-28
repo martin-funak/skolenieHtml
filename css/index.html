@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skolenie</title>
+    <link rel="stylesheet" href="css/form.css">
+    
+</head>
+<body>
+    <div class="form-box">
+        <input type="radio" name="tab" id="tab1-button" >
+        <label for="tab1-button">Tab1</label>
+        <input type="radio" name="tab" id="tab2-button" checked>
+        <label for="tab2-button">Tab2</label>
+        <input type="radio" name="tab" id="tab3-button">
+        <label for="tab3-button">Tab3</label>
+        <div class="tab tab1">          
+            <form>
+                <div class="form-row">
+                    <input type="text" id="txtName" name="txtName" placeholder="Meno" value=""/>
+                    <input type="text" id="txtSurName" name="txtSurName"  placeholder="Priezvisko" value=""/>                    
+
+                </div>
+                <div class="form-row">
+                    <input type="email" id="txtEmail" name="txtEmail"  placeholder="Email" value=""/>
+                    <input type="tel" id="txtPhone" name="txtPhone" placeholder="Telefon" value=""/> 
+                    
+                </div>
+                <div class="form-row">
+                   <textarea name="" id="txtAreaMessage" name="txtAreaMessage"  placeholder="Vaša sprava" cols="30" rows="3"></textarea>
+                    
+                </div>
+                <div class="form-row">
+                    <div class="customCheck">
+                        <input type="checkbox" name="chbConsent" id="chbConsent"  value="true">
+                        <label for="chbConsent"><span></span>  Súhlasím s <a href="#">podmienkami</a> </label>
+                        
+                    </div>
+                  
+                </div>
+                <div class="form-row">
+                    <div class="customCheck">
+                        <input type="checkbox" name="chbConsentMarketing" id="chbConsentMarketing">
+                        <label for="chbConsentMarketing"><span></span> Súhlasím so zasielaním noviniek</label>                  
+                        
+                    </div>
+                   
+                </div>
+                <div class="form-row">
+                    <div class="custom-submit">
+                        <input type="submit" name="submit" value="Odoslať">
+                    </div>                  
+                                     
+                </div>
+
+            </form>
+        </div>
+        <div class="tab tab2">
+            Obsah pre tab2
+            <div class="form-row">
+                <input type="text" id="txtName2" name="txtName2" placeholder="Meno" value=""/>
+                <input type="text" id="txtSurName2" name="txtSurName2"  placeholder="Priezvisko" value=""/>                    
+
+            </div>
+            <div class="form-row">
+                <div class="custom-date">
+                    <input type="date" id="txtDate" v name="txtDate" placeholder="Dátum" value=""/>               
+
+                </div>
+                 <input type="email" id="txtEmail2" name="txtEmail2"  placeholder="Email" value=""/>
+                  
+
+            </div>
+        </div>
+        <div class="tab tab3">
+            Obsah pre tab3
+        </div>
+
+    </div>   
+    
+</body>
+</html>

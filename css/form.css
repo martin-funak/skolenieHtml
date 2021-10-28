@@ -1,0 +1,161 @@
+
+.form-box{
+    background-color: silver;
+}
+
+.form-box .tab {
+    display: none;
+    padding: 21px;
+    background-color: white;  
+    margin-left: 10px;
+}
+
+.form-box input[name=tab]{
+    display: none;
+}
+
+.form-box label:first-of-type{
+    margin-left: 10px;
+}
+
+.form-box input[name=tab]:checked +label{
+    background-color: white;
+}
+
+.form-box input#tab1-button:checked ~ .tab1, 
+.form-box input#tab2-button:checked ~ .tab2,
+.form-box input#tab3-button:checked ~ .tab3
+{
+    display: block;
+}
+
+.form-box > label{
+    padding: 15px;
+    display: inline-block;
+}
+
+.tab .form-row{
+    display: flex;  
+}
+
+.tab .form-row input[type=text], 
+.tab .form-row input[type=email], 
+.tab .form-row input[type=tel]{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.custom-date
+{
+    width: 50%;
+    margin: 10px;      
+}
+.tab .form-row input[type=date]
+{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;    
+}
+
+.tab  textarea{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.customCheck
+{
+    margin-bottom: 15px;
+}
+.customCheck label span{
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: red;
+
+}
+.customCheck label span::before{
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    margin: 1px;
+    position: relative;
+    border-radius: 100%;
+    background-color: red;
+    left: 1px;
+    transition: all 1s;
+}
+.customCheck input{
+    display: none;
+}
+.customCheck input:checked +label span::before{
+    left: 15px;
+    background-color: green;
+}
+.customCheck input:checked +label span{
+    color: green;
+}
+.customCheck span{
+    margin-right: 15px;   
+    position: relative; 
+    top: 3px;
+}
+.custom-submit input{
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    color:white;
+    padding: 10px 40px
+}
+.custom-submit{
+    margin: 10px;
+    border-radius: 19px;
+    position: relative;
+    background-color: green;
+}
+.custom-submit::after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 2px dotted white;
+    margin: 8px;    
+    position: absolute;
+    top: 0;
+    right:0 ;
+    transform: rotate(-88deg);
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+
+
+  
+  @keyframes loader {
+    0%   {transform: rotate(0deg) ;}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg) ;}
+    100% {transform: rotate(360deg) ;}
+  }
+  .custom-date{
+      position: relative;
+  }
+  .custom-date::before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      display: block;
+      position:absolute;
+      right: 80px;
+      top: 23px;
+      pointer-events: none;
+  }
+
+
